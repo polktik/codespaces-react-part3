@@ -15,7 +15,7 @@ export default function Shop(){
     const [products,setProducts] = useState([]);
     const URL="https://scaling-lamp-x5x9gw4wgqrfgp9-5000.app.github.dev";
     useEffect(()=>{
-        axios.get(URL+'/api/products')
+        axios.get(URL+"/api/products")
         .then(response=>{
             setProducts(response.data);
         })
